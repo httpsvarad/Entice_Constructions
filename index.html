@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Entice Constructions</title>
+    <meta
+      name="description"
+      content="In the dynamic world of construction, Entice Constructions is a beacon of innovation and commitment. Our vision is to transform the industry by providing real estate, supplies and skilled manpower services"
+    />
+    <link rel="icon" href="Images/fav.png" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="slider.css" />
+    <!-- Boxicons CDN Link -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <i class="bx bx-menu"></i>
+
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo3.jpg" width="200px" height="auto"
+          /></a>
+        </div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <span class="logo-name"
+              ><img src="images/logo3.jpg" width="200px" height="auto"
+            /></span>
+            <i class="bx bx-x"></i>
+          </div>
+          <ul class="links">
+            <li><a href="index.html">HOME</a></li>
+            <li>
+              <a href="#">ABOUT US</a>
+              <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><a href="leadership.html">Our Leadership</a></li>
+                <li><a href="comphis.html">Company History</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="ser.html">SERVICES</a>
+            </li>
+            <li>
+              <a href="pro.html">PROJECTS</a>
+            </li>
+            <li>
+              <a href="careers.html">CAREERS</a>
+            </li>
+            <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+        </div>
+        <div class="search-box">
+          <i class="bx bx-search"></i>
+          <div class="input-box">
+            <input type="text" placeholder="Search..." />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="main swiper mySwiper">
+      <div class="wrapper swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="images/img3.jpeg" alt="" class="image" />
+          <div class="image-data">
+            <h2>
+              Entice Constructions <br />
+              Building a Legacy of Excellence
+            </h2>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/img1.jpeg" alt="" class="image" />
+          <div class="image-data">
+            <h2>
+              Transforming Ideas into <br />
+              Construction Masterpieces
+            </h2>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/img4.jpeg" alt="" class="image" />
+          <div class="image-data">
+            <h2>
+              Unleashing Creativity, Building <br />
+              Beyond Boundaries
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 3000, // Delay in milliseconds (3 seconds in this case)
+        },
+      });
+    </script>
+
+    <script src="script.js"></script>
+
+    <footer>
+      <section class="footer">
+        <div class="footer-row">
+          <div class="footer-col">
+            <img src="images/logotxt.jpeg" alt="" />
+          </div>
+          <div class="footer-col">
+            <h4>Contact Info</h4>
+            <ul class="links">
+              <li>+91 9820195413</li>
+              <li>enticeconstruction90@gmail.com</li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Find Us</h4>
+            <ul class="links">
+              <li><a href="#">Entice Constructions, 22, Pratapnagar</a></li>
+              <li>
+                <a href="#"
+                  >near J.V.L.R junction, Jogeshwari East, Mumbai 400060</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

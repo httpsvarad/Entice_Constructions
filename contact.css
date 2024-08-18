@@ -1,0 +1,89 @@
+.contactcontainer h2 {
+  text-align: center;
+  color: brown;
+}
+
+.contactus {
+  padding-top: 90px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactcontainer {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  height: 690px;
+  width: 500px;
+}
+
+.contactcontainer input[type="text"],
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: none;
+}
+
+
+/* Style for the select element */
+.contactcontainer select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  appearance: none; /* Removes default styles on some browsers */
+  background: #fff url('path/to/your-arrow-icon.png') no-repeat right center; /* Add a custom arrow icon */
+  background-size: 20px; /* Adjust the size of the arrow icon */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Style for the select options */
+.contactcontainer select option {
+  background-color: #fff; /* Background color for options */
+  color: #333; /* Text color for options */ 
+}
+
+/* Style for the select when it is focused */  
+.contactcontainer select:focus {
+  outline: none; /* Remove the default focus outline */
+  
+}
+
+
+.contactcontainer input[type="button"] {
+  background-color: #04aa60;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contactcontainer input[type="button"]:hover {
+  background-color: #45a049;
+}
+
+/*--- Mobile Responsive ----*/
+@media only screen and (max-width: 900px) {
+  .contactus {
+    padding: 10% 5%;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+    .contactus {
+      padding-top:10%;
+      padding-bottom: 5%;
+    }
+}
+/*--- End of Mobile Responsive ----*/

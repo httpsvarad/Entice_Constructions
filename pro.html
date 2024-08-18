@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="icon" href="Images/fav.png" />
+    <link rel="stylesheet" href="pro.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <i class="bx bx-menu"></i>
+        <div class="logo">
+          <a href="index.html">
+            <img src="images/logo3.jpg" width="200px" height="auto"
+          /></a>
+        </div>
+        <div class="nav-links">
+          <div class="sidebar-logo">
+            <span class="logo-name"
+              ><img src="images/logo3.jpg" width="200px" height="auto"
+            /></span>
+            <i class="bx bx-x"></i>
+          </div>
+          <ul class="links">
+            <li><a href="index.html">HOME</a></li>
+            <li>
+              <a href="#">ABOUT US</a>
+              <i class="bx bxs-chevron-down htmlcss-arrow arrow"></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><a href="leadership.html">Our Leadership</a></li>
+                <li><a href="comphis.html">Company History</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="ser.html">SERVICES</a>
+            </li>
+            <li>
+              <a href="pro.html">PROJECTS</a>
+            </li>
+            <li>
+              <a href="careers.html">CAREERS</a>
+            </li>
+            <li><a href="contact.html">CONTACT US</a></li>
+          </ul>
+        </div>
+        <div class="search-box">
+          <i class="bx bx-search"></i>
+          <div class="input-box">
+            <input type="text" placeholder="Search..." />
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="pro">
+      <h2 class="title">PROJECTS</h2>
+      <section class="project">
+        <div class="project-image">
+          <img
+            src="images/metropro.jpg"
+            alt="Project 1"
+            width="260px"
+            height="auto"
+          />
+        </div>
+        <div class="project-details">
+          <h2>MMRDA/9/MMRP/CA48</h2>
+          <br />
+          <p>
+            Mumbai's Metro Line 9 (Red Line extension) features a unique
+            double-decker bridge connecting Dahisar to Mira Road and Andheri to
+            CSMIA.
+          </p>
+          <br />
+          <a href="#" class="learn-more-button" data-modal="modal1"
+            >Read More</a
+          >
+        </div>
+      </section>
+
+      <section class="project">
+        <div class="project-image">
+          <img
+            src="images/pro2.jfif"
+            alt="Project 2"
+            width="260px"
+            height="auto"
+          />
+        </div>
+        <div class="project-details">
+          <h2>Mumbai Metro Line 7</h2>
+          <br />
+          <p>
+            Mumbai Metro Line 7, which runs from Dahisar East to Andheri East,
+            is a 16.4 km long elevated network that comprises 14 stations from
+            Dahisar to Andheri.
+          </p>
+          <br />
+          <a href="#" class="learn-more-button" data-modal="modal2"
+            >Read More</a
+          >
+        </div>
+      </section>
+
+      <section class="project">
+        <!-- Project 3 content here -->
+      </section>
+
+      <section class="project">
+        <!-- Project 4 content here -->
+      </section>
+
+      <section class="project">
+        <!-- Project 5 content here -->
+      </section>
+    </section>
+
+    <!-- Add more project sections as needed -->
+
+    <!-- Modal for Project 1 -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close-button" data-modal="modal1">&times;</span>
+        <h2>MMRDA/9/MMRP/CA48</h2>
+        <div class="project-image">
+          <img src="images/pro.jpeg" alt="Project 1" />
+        </div>
+        <p>
+          Mumbai's Metro Line 9, an extension of the Red Line, features a unique
+          double-decker bridge connecting Dahisar to Mira Road and Andheri to
+          Chhatrapati Shivaji Maharaj International Airport (CSMIA). This
+          innovative metro line combines a flyover on its first deck and metro
+          tracks on the second deck. The flyover originates near the projected
+          Shivaji Chowk (Mira Road) metro station, traversing Mira Bhayander
+          Road to reach Bhayander (West). Notably, it serves as a crucial
+          connector, linking the Western Express Highway, the Western Line, and
+          Mumbai Metro's Lines 2 and 7, setting it apart from other metro lines
+          in the city.
+        </p>
+      </div>
+    </div>
+
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close-button" data-modal="modal2">&times;</span>
+        <h2>Mumbai Metro Line 7</h2>
+        <div class="project-image">
+          <img src="images/pro2.jfif" alt="Project 2" />
+        </div>
+        <p>
+          Mumbai Metro Line 7, which runs from Dahisar East to Andheri East, is
+          a 16.4 km long elevated network that comprises 14 stations from
+          Dahisar to Andheri. Earlier, this metro line was proposed by the
+          government and was going to be recognized as the red metro
+          line.However, later, the authorities decided to extend the route. The
+          line 7 corridor at Dahisar was extended up to Mira Bhayandar towards
+          the north as metro 9. Towards the southern end, it was extended from
+          Andheri to the CSMIA T2 International Airport as metro 7A.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- Include JavaScript to handle modal functionality -->
+    <script>
+      // Get all Learn More buttons
+      const learnMoreButtons = document.querySelectorAll(".learn-more-button");
+
+      // Attach click event listeners to all Learn More buttons
+      learnMoreButtons.forEach((button) => {
+        button.addEventListener("click", function (e) {
+          e.preventDefault();
+          const modalId = this.getAttribute("data-modal");
+          const modal = document.getElementById(modalId);
+          modal.style.display = "block";
+        });
+      });
+
+      // Close modal when the close button or overlay is clicked
+      document.addEventListener("click", function (e) {
+        if (e.target && e.target.classList.contains("close-button")) {
+          const modalId = e.target.getAttribute("data-modal");
+          const modal = document.getElementById(modalId);
+          modal.style.display = "none";
+        }
+      });
+
+      // Close modal when the Escape key is pressed
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") {
+          const modals = document.querySelectorAll(".modal");
+          modals.forEach((modal) => {
+            modal.style.display = "none";
+          });
+        }
+      });
+    </script>
+
+    <footer>
+      <section class="footer">
+        <div class="footer-row">
+          <div class="footer-col">
+            <img src="images/logotxt.jpeg" alt="" />
+          </div>
+          <div class="footer-col">
+            <h4>Contact Info</h4>
+            <ul class="links">
+              <li>+91 9820195413</li>
+              <li>enticeconstruction90@gmail.com</li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Find Us</h4>
+            <ul class="links">
+              <li><a href="#">Entice Constructions, 22, Pratapnagar</a></li>
+              <li>
+                <a href="#"
+                  >near J.V.L.R junction, Jogeshwari East, Mumbai 400060</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
