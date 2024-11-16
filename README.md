@@ -1,8 +1,6 @@
 # 🏗️ Entice Constructions  
 
-**Entice Constructions** is a professional website developed to showcase the services and expertise of a construction company based in Mumbai. This was my **first freelance project**, designed to create a strong online presence with a clean, responsive design and seamless user experience.  
-
-Built using **HTML**, **CSS**, and **JavaScript**, the website reflects modern web development practices and is fully optimized for various devices.  
+**Entice Constructions** is a professional website developed to showcase the services and expertise of a construction company based in Mumbai. This was my **first freelance project**, designed to create a strong online presence with a clean, responsive design and seamless user experience.   
 
 ---
 
